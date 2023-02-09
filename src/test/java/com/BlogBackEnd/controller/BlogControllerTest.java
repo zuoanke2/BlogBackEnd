@@ -12,6 +12,13 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * @className BlogControllerTest
+ * @author Anke Zuo
+ * @description unit tests for blog module
+ * @updateTime 2/9/23 02:11
+ * @version 1.0
+ */
 @SpringBootTest
 class BlogControllerTest {
     @Autowired

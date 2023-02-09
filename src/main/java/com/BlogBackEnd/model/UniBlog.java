@@ -2,6 +2,13 @@ package com.BlogBackEnd.model;
 
 import java.util.List;
 
+/**
+ * @className UniBlog
+ * @author Anke Zuo
+ * @description detail info of a blog
+ * @updateTime 2/9/23 02:08
+ * @version 1.0
+ */
 public class UniBlog {
     private String blogTitle;
     private String blogAuthor;

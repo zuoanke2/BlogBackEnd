@@ -1,5 +1,12 @@
 package com.BlogBackEnd.model;
 
+/**
+ * @className UserBean
+ * @author Anke Zuo
+ * @description info of an user
+ * @updateTime 2/9/23 02:08
+ * @version 1.0
+ */
 public class UserBean {
     private int userId;
     private String userName;

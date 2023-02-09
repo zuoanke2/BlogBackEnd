@@ -1,5 +1,12 @@
 package com.BlogBackEnd.model;
 
+/**
+ * @className CommentVO 
+ * @author Anke Zuo
+ * @description view object of comment
+ * @updateTime 2/9/23 02:07 
+ * @version 1.0
+ */
 public class CommentVO {
     private int cmtId;
     private int authorId;

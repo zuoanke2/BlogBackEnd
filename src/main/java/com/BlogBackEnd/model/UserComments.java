@@ -1,5 +1,12 @@
 package com.BlogBackEnd.model;
 
+/**
+ * @className UserComments
+ * @author Anke Zuo
+ * @description detail info of an user's all comments
+ * @updateTime 2/9/23 02:09
+ * @version 1.0
+ */
 public class UserComments {
     private String blogTitle;
     private String blogAuthor;

@@ -14,6 +14,13 @@ import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @className BlogServiceImpl
+ * @author Anke Zuo
+ * @description implementation of blog service
+ * @updateTime 2/9/23 02:12
+ * @version 1.0
+ */
 @Service
 public class BlogServiceImpl implements BlogService {
     @Resource

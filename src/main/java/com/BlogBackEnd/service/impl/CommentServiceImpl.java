@@ -12,6 +12,13 @@ import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @className CommentServiceImpl
+ * @author Anke Zuo
+ * @description implementation of comment service
+ * @updateTime 2/9/23 02:13
+ * @version 1.0
+ */
 @Service
 public class CommentServiceImpl implements CommentService {
     @Resource

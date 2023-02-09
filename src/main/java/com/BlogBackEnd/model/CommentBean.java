@@ -1,5 +1,12 @@
 package com.BlogBackEnd.model;
 
+/**
+ * @className CommentBean
+ * @author Anke Zuo
+ * @description info of a comment
+ * @updateTime 2/9/23 02:07
+ * @version 1.0
+ */
 public class CommentBean {
     private int cmtId;
     private int authorId;

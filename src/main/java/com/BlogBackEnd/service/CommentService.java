@@ -5,6 +5,13 @@ import com.BlogBackEnd.model.UserComments;
 
 import java.util.List;
 
+/**
+ * @className CommentService
+ * @author Anke Zuo
+ * @description comment relates service
+ * @updateTime 2/9/23 02:10
+ * @version 1.0
+ */
 public interface CommentService {
     List<CommentBean> queryCommentListByBlog(int blogId);
 

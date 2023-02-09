@@ -1,6 +1,5 @@
 package com.BlogBackEnd.controller;
 
-import com.BlogBackEnd.model.BlogBean;
 import com.BlogBackEnd.model.CommentBean;
 import com.BlogBackEnd.model.CommentVO;
 import com.BlogBackEnd.model.UserComments;
@@ -12,8 +11,13 @@ import org.springframework.util.Assert;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * @className CommentControllerTest
+ * @author Anke Zuo
+ * @description unit tests for comment module
+ * @updateTime 2/9/23 02:12
+ * @version 1.0
+ */
 @SpringBootTest
 class CommentControllerTest {
     @Autowired
