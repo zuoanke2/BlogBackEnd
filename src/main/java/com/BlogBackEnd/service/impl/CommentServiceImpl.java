@@ -7,6 +7,7 @@ import com.BlogBackEnd.model.UserComments;
 import com.BlogBackEnd.service.BlogService;
 import com.BlogBackEnd.service.CommentService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -30,21 +31,26 @@ public class CommentServiceImpl implements CommentService {
         List<CommentBean> commentBeanList =  commentMapper.queryCommendListByBlogId(blogId);
         return commentBeanList;
     }
+
+    @Transactional
     @Override
     public void addComment(int authorId, int blogId, String comment) {
         commentMapper.addComment(authorId, blogId, comment);
     }
 
+    @Transactional
     @Override
     public void updateComment(int cmtId, String comment) {
         commentMapper.updateComment(cmtId, comment);
     }
 
+    @Transactional
     @Override
     public void deleteComment(int cmtId) {
         commentMapper.deleteComment(cmtId);
     }
 
+    @Transactional
     @Override
     public List<UserComments> queryUserComments(int userId) {
         List<UserComments> userCommentsList = new ArrayList<>();
