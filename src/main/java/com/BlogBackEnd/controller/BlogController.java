@@ -13,18 +13,18 @@ public class BlogController {
     @Autowired
     private BlogService blogService;
 
-    @GetMapping("blog/get")
-    public BlogBean queryBlog(@RequestParam("blogId") int blogId) {
+    @GetMapping("blog/get/{blogId}")
+    public BlogBean queryBlog(@PathVariable("blogId") int blogId) {
         return blogService.queryBlog(blogId);
     }
 
-    @GetMapping("blog/getbyuser")
-    public List<BlogBean> queryBlogsByUser(@RequestParam("userId")int userId) {
+    @GetMapping("blog/getbyuser/{userId}")
+    public List<BlogBean> queryBlogsByUser(@PathVariable("userId")int userId) {
         return blogService.queryBlogsByUser(userId);
     }
 
-    @GetMapping("blog/getuniblog")
-    public UniBlog queryUniBlogVO(@RequestParam("blogId") int blogId) {
+    @GetMapping("blog/getuniblog/{blogId}")
+    public UniBlog queryUniBlogVO(@PathVariable("blogId") int blogId) {
         return blogService.queryUniBlog(blogId);
     }
 }

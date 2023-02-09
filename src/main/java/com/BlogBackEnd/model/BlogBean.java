@@ -1,17 +1,17 @@
 package com.BlogBackEnd.model;
 
 public class BlogBean {
-    private int blogId;
+    private int id;
     private String title;
     private int authorId;
     private String content;
 
-    public int getBlogId() {
-        return blogId;
+    public int getId() {
+        return id;
     }
 
-    public void setBlogId(int blogId) {
-        this.blogId = blogId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitle() {

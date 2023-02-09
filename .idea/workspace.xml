@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d693486e-6afa-4d6c-97fe-5199587bd45f" name="Changes" comment="unit tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/controller/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/BlogBackEnd/controller/CommentControllerTest.java" afterDir="false" />
+    <list default="true" id="d693486e-6afa-4d6c-97fe-5199587bd45f" name="Changes" comment="code structure optimization">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/controller/BlogBackEndController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/controller/BlogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/BlogBackEnd/controller/BlogBackEndControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/BlogBackEnd/controller/BlogControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/RunService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/RunService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/BlogBackEnd/controller/BlogControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/BlogBackEnd/controller/BlogControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/BlogBackEnd/controller/CommentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/BlogBackEnd/controller/CommentControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +57,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.0",
@@ -131,9 +133,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.RunService" />
         <item itemvalue="JUnit.BlogControllerTest" />
         <item itemvalue="JUnit.BlogControllerTest.queryBlog" />
-        <item itemvalue="Spring Boot.RunService" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +147,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675880769837</updated>
-      <workItem from="1675880771146" duration="23855000" />
+      <workItem from="1675880771146" duration="25179000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1675900711825</created>
@@ -203,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675925029679</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="code structure optimization">
+      <created>1675925330349</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675925330349</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +244,8 @@
     <MESSAGE value="query a single user's comments" />
     <MESSAGE value="query blogs by user and query all comments of one single user" />
     <MESSAGE value="unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="unit tests" />
+    <MESSAGE value="code structure optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="code structure optimization" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

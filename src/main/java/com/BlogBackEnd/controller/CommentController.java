@@ -14,8 +14,8 @@ public class CommentController {
     @Autowired
     private CommentService commentService;
 
-    @GetMapping("comment/get")
-    public List<CommentBean> queryCommentListByBlog(@RequestParam("blogId") int blogId) {
+    @GetMapping("/comment/get/{blogId}")
+    public List<CommentBean> queryCommentListByBlog(@PathVariable("blogId") int blogId) {
         return commentService.queryCommentListByBlog(blogId);
     }
 
@@ -31,14 +31,14 @@ public class CommentController {
         return "Updated!";
     }
 
-    @GetMapping("/comment/delete")
-    public String deleteComment(@RequestParam("cmtId") int cmtId) {
+    @GetMapping("/comment/delete/{cmtId}")
+    public String deleteComment(@PathVariable("cmtId") int cmtId) {
         commentService.deleteComment(cmtId);
         return "Deleted!";
     }
 
-    @GetMapping("/comment/queryByUser")
-    public List<UserComments> queryUserComments(@RequestParam("userId") int userId) {
+    @GetMapping("/comment/queryByUser/{userId}")
+    public List<UserComments> queryUserComments(@PathVariable("userId") int userId) {
         return commentService.queryUserComments(userId);
     }
 }
