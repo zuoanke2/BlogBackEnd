@@ -2,6 +2,7 @@ package com.BlogBackEnd.controller;
 
 import com.BlogBackEnd.model.BlogBean;
 import com.BlogBackEnd.model.CommentBean;
+import com.BlogBackEnd.model.UniBlog;
 import com.BlogBackEnd.service.BlogService;
 import com.BlogBackEnd.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,7 @@ public class BlogBackEndController {
     @Autowired
     private CommentService commentService;
 
-    @GetMapping("blogs/get")
+    @GetMapping("blog/get")
     public BlogBean queryBlog(@RequestParam("blogId") int blogId) {
         return blogService.queryBlog(blogId);
     }
@@ -25,5 +26,10 @@ public class BlogBackEndController {
     @GetMapping("comment/get")
     public List<CommentBean> queryCommentListByBlog(@RequestParam("blogId") int blogId) {
         return commentService.queryCommentListByBlog(blogId);
+    }
+
+    @GetMapping("uniblog/get")
+    public UniBlog queryUniBlogVO(@RequestParam("blogId") int blogId) {
+        return blogService.queryUniBlogVO(blogId);
     }
 }

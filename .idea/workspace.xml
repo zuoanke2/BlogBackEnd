@@ -4,16 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d693486e-6afa-4d6c-97fe-5199587bd45f" name="Changes" comment="init project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/mapper/CommentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/model/uniBlogVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/model/userBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/CommentMapper.xml" afterDir="false" />
+    <list default="true" id="d693486e-6afa-4d6c-97fe-5199587bd45f" name="Changes" comment="query CommentBeanList">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/model/UniComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/controller/BlogBackEndController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/model/CommentBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/model/CommentBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/controller/BlogBackEndController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/controller/BlogBackEndController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/model/uniBlogVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/model/UniBlog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/model/userBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/model/UserBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/impl/BlogServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +53,6 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -105,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675880769837</updated>
-      <workItem from="1675880771146" duration="8525000" />
+      <workItem from="1675880771146" duration="11058000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1675900711825</created>
@@ -114,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675900711825</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="query CommentBeanList">
+      <created>1675903082956</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675903082956</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +133,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -133,7 +147,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
-    <option name="LAST_COMMIT_MESSAGE" value="init project" />
+    <MESSAGE value="query CommentBeanList" />
+    <option name="LAST_COMMIT_MESSAGE" value="query CommentBeanList" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

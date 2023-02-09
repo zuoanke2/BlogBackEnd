@@ -2,14 +2,11 @@ package com.BlogBackEnd.model;
 
 import java.util.List;
 
-public class uniBlogVO {
-    class uniComment {
-        private String commentAuthorName;
-        private String comment;
-    }
+public class UniBlog {
     private String blogTitle;
     private String blogAuthor;
-    private List<uniComment> commentList;
+    private String blogContent;
+    private List<UniComment> commentList;
 
     public String getBlogTitle() {
         return blogTitle;
@@ -27,11 +24,19 @@ public class uniBlogVO {
         this.blogAuthor = blogAuthor;
     }
 
-    public List<uniComment> getCommentList() {
+    public String getBlogContent() {
+        return blogContent;
+    }
+
+    public void setBlogContent(String blogContent) {
+        this.blogContent = blogContent;
+    }
+
+    public List<UniComment> getCommentList() {
         return commentList;
     }
 
-    public void setCommentList(List<uniComment> commentList) {
+    public void setCommentList(List<UniComment> commentList) {
         this.commentList = commentList;
     }
 }

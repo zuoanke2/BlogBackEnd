@@ -1,6 +1,6 @@
 package com.BlogBackEnd.model;
 
-public class userBean {
+public class UserBean {
     private int userId;
     private String userName;
 
