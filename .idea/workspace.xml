@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d693486e-6afa-4d6c-97fe-5199587bd45f" name="Changes" comment="query a single user's comments">
+    <list default="true" id="d693486e-6afa-4d6c-97fe-5199587bd45f" name="Changes" comment="query blogs by user and query all comments of one single user">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/advice/GlobalAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/httpUtils/HttpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/BlogBackEnd/controller/BlogBackEndControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/controller/BlogBackEndController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/controller/BlogBackEndController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/mapper/BlogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/mapper/BlogMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/BlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/impl/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/BlogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/BlogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -51,18 +50,59 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ToolWindowMessages.ShowToolbar": "false",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "vcs.Git",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.BlogBackEnd.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BlogBackEndControllerTest">
+    <configuration name="BlogBackEndControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blogbackend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.BlogBackEnd.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.BlogBackEnd.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.BlogBackEnd.controller.BlogBackEndControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogBackEndControllerTest.queryBlog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blogbackend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.BlogBackEnd.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.BlogBackEnd.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.BlogBackEnd.controller.BlogBackEndControllerTest" />
+      <option name="METHOD_NAME" value="queryBlog" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="BlogBackEnd" />
       <method v="2">
@@ -91,6 +131,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BlogBackEndControllerTest" />
+        <item itemvalue="JUnit.BlogBackEndControllerTest.queryBlog" />
         <item itemvalue="Spring Boot.RunService" />
       </list>
     </recent_temporary>
@@ -103,7 +145,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675880769837</updated>
-      <workItem from="1675880771146" duration="16456000" />
+      <workItem from="1675880771146" duration="23545000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1675900711825</created>
@@ -147,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675913541118</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="query blogs by user and query all comments of one single user">
+      <created>1675914104006</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675914104006</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,10 +226,19 @@
     <MESSAGE value="add comment and modify comment" />
     <MESSAGE value="delete comment" />
     <MESSAGE value="query a single user's comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="query a single user's comments" />
+    <MESSAGE value="query blogs by user and query all comments of one single user" />
+    <option name="LAST_COMMIT_MESSAGE" value="query blogs by user and query all comments of one single user" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BlogBackEnd$BlogBackEndControllerTest_queryBlog.ic" NAME="BlogBackEndControllerTest.queryBlog Coverage Results" MODIFIED="1675920562279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.BlogBackEnd.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/BlogBackEnd$BlogBackEndControllerTest.ic" NAME="BlogBackEndControllerTest Coverage Results" MODIFIED="1675921959018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.BlogBackEnd.controller.*</FILTER>
+    </SUITE>
   </component>
 </project>
