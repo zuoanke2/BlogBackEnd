@@ -87,7 +87,7 @@ public class CommentController {
      * @return: java.util.List<com.BlogBackEnd.model.UserComments>
      * @throws
      */
-    @GetMapping("/comment/queryByUser/{userId}")
+    @GetMapping("/comment/querybyuser/{userId}")
     public List<UserComments> queryUserComments(@PathVariable("userId") int userId) {
         return commentService.queryUserComments(userId);
     }
