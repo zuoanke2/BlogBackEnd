@@ -14,4 +14,6 @@ public interface CommentMapper {
     void updateComment(int cmtId, String comment);
 
     void deleteComment(int cmtId);
+
+    List<CommentBean> queryCommendListByUserId(int userId);
 }

@@ -1,6 +1,7 @@
 package com.BlogBackEnd.service;
 
 import com.BlogBackEnd.model.CommentBean;
+import com.BlogBackEnd.model.UserComments;
 
 import java.util.List;
 
@@ -12,4 +13,6 @@ public interface CommentService {
     void updateComment(int cmtId, String comment);
 
     void deleteComment(int cmtId);
+
+    List<UserComments> queryUserComments(int userId);
 }

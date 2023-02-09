@@ -18,4 +18,8 @@
     <delete id="deleteComment" parameterType="com.BlogBackEnd.model.CommentVO">
         DELETE FROM comment WHERE cmtid = #{cmtId}
     </delete>
+
+    <select id="queryCommendListByUserId" resultType="com.BlogBackEnd.model.CommentBean">
+        SELECT * from comment where authorid = #{userId}
+    </select>
 </mapper>

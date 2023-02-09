@@ -1,9 +1,6 @@
 package com.BlogBackEnd.controller;
 
-import com.BlogBackEnd.model.BlogBean;
-import com.BlogBackEnd.model.CommentBean;
-import com.BlogBackEnd.model.CommentVO;
-import com.BlogBackEnd.model.UniBlog;
+import com.BlogBackEnd.model.*;
 import com.BlogBackEnd.service.BlogService;
 import com.BlogBackEnd.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,6 +41,11 @@ public class BlogBackEndController {
     public String deleteComment(@RequestParam("cmtId") int cmtId) {
         commentService.deleteComment(cmtId);
         return "Deleted!";
+    }
+
+    @GetMapping("/comment/queryByUser")
+    public List<UserComments> queryUserComments(@RequestParam("userId") int userId) {
+        return commentService.queryUserComments(userId);
     }
 
     @GetMapping("uniblog/get")
