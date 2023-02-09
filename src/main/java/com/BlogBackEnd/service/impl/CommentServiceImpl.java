@@ -17,4 +17,13 @@ public class CommentServiceImpl implements CommentService {
         List<CommentBean> commentBeanList =  commentMapper.queryCommendListByBlogId(blogId);
         return commentBeanList;
     }
+    @Override
+    public void addComment(int authorId, int blogId, String comment) {
+        commentMapper.addComment(authorId, blogId, comment);
+    }
+
+    @Override
+    public void updateComment(int cmtId, String comment) {
+        commentMapper.updateComment(cmtId, comment);
+    }
 }

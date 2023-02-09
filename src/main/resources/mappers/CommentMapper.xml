@@ -6,4 +6,12 @@
     <select id="queryCommendListByBlogId" resultType="com.BlogBackEnd.model.CommentBean">
         SELECT * from comment where blogid = #{blogId}
     </select>
+
+    <insert id="addComment" parameterType="com.BlogBackEnd.model.CommentVO">
+        INSERT INTO comment (authorid, blogid, comment) VALUES (#{authorId}, #{blogId}, #{comment})
+    </insert>
+
+    <update id="updateComment" parameterType="com.BlogBackEnd.model.CommentVO">
+        UPDATE comment SET comment = #{comment} where cmtid = #{cmtId}
+    </update>
 </mapper>
