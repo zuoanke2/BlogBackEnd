@@ -21,16 +21,19 @@ You already done that!
 7, now I beileve the backend service is running on 8080 port.  
 ## Backend Service  
 There are totally 8 main APIs in **BlogController.java** and **CommentController.java**:  
+
 **BlogController:**  
 *queryBlog*: query single blog info (title, content, authorId) by blogId.  
 *queryBlogsByUser*: query all blogs of one single user.  
 *queryUniBlogVO*: query completed info of a blog, include title, content, author's name and all the comments of this blog.  
+
 **CommentController:**  
 *queryCommentListByBlog*: query all the comments of a single blog.  
 *addComment*: add comment to a blog.  
 *updateComment*: modify one piece of comment.  
 *deleteComment*:  delete a comment.  
 *queryUserComments*: query all the comments written by someone.  
+
 ### How to send request (I recommend you to use Postman to send test requests)  
 You can assemble the required parameters for requests follow the pictures below, all the requests were sent by Postman.  
 
