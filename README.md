@@ -29,8 +29,8 @@ There are totally 8 main APIs in **BlogController.java** and **CommentController
 *queryCommentListByBlog*: query all the comments of a single blog.  
 *addComment*: add comment to a blog.  
 *updateComment*: modify one piece of comment.  
-*deleteComment*:  delete a comment.
-*queryUserComments*: query all the comments written by someone.
+*deleteComment*:  delete a comment.  
+*queryUserComments*: query all the comments written by someone.  
 ### How to send request (I recommend you to use Postman to send test requests)  
 You can assemble the required parameters for requests follow the pictures below, all the requests were sent by Postman.  
 
