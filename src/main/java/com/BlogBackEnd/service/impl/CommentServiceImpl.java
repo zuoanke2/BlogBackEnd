@@ -26,4 +26,9 @@ public class CommentServiceImpl implements CommentService {
     public void updateComment(int cmtId, String comment) {
         commentMapper.updateComment(cmtId, comment);
     }
+
+    @Override
+    public void deleteComment(int cmtId) {
+        commentMapper.deleteComment(cmtId);
+    }
 }

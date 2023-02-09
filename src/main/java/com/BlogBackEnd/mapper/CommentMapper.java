@@ -12,4 +12,6 @@ public interface CommentMapper {
     void addComment(int authorId, int blogId, String comment);
 
     void updateComment(int cmtId, String comment);
+
+    void deleteComment(int cmtId);
 }

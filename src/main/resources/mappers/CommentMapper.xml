@@ -14,4 +14,8 @@
     <update id="updateComment" parameterType="com.BlogBackEnd.model.CommentVO">
         UPDATE comment SET comment = #{comment} where cmtid = #{cmtId}
     </update>
+
+    <delete id="deleteComment" parameterType="com.BlogBackEnd.model.CommentVO">
+        DELETE FROM comment WHERE cmtid = #{cmtId}
+    </delete>
 </mapper>

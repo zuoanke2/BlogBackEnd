@@ -40,6 +40,12 @@ public class BlogBackEndController {
         return "Updated!";
     }
 
+    @GetMapping("/comment/delete")
+    public String deleteComment(@RequestParam("cmtId") int cmtId) {
+        commentService.deleteComment(cmtId);
+        return "Deleted!";
+    }
+
     @GetMapping("uniblog/get")
     public UniBlog queryUniBlogVO(@RequestParam("blogId") int blogId) {
         return blogService.queryUniBlogVO(blogId);
