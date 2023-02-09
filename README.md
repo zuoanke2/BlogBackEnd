@@ -16,7 +16,7 @@ You already done that!
 4, otherwise, please modify these parameters in the application.yml file in the resources folder.  
 5, IDEA has already integrated maven, so you don't need any configuration, just wait for maven automatically grab every library this project need.  
 6, when maven finish its job, just click the Run button of green color on the top bar of the window and it will run the RunService.  
-<img width="287" alt="image" src="https://user-images.githubusercontent.com/117051280/217759834-d6d5a3b1-04c3-4270-b21b-233add778a34.png">
+<img width="287" alt="image" src="https://user-images.githubusercontent.com/117051280/217759834-d6d5a3b1-04c3-4270-b21b-233add778a34.png">  
 6, when maven finish its job, just click the Run button of green color on the top bar of the window and it will run the DemoApplication.    
 7, now I beileve the backend service is running on 8080 port.  
 ## Backend Service  
