@@ -1,7 +1,8 @@
 package com.BlogBackEnd.controller;
 
-import com.BlogBackEnd.model.*;
-import com.BlogBackEnd.service.BlogService;
+import com.BlogBackEnd.model.CommentBean;
+import com.BlogBackEnd.model.CommentVO;
+import com.BlogBackEnd.model.UserComments;
 import com.BlogBackEnd.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -9,26 +10,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-public class BlogBackEndController {
-    @Autowired
-    private BlogService blogService;
+public class CommentController {
     @Autowired
     private CommentService commentService;
-
-    @GetMapping("blog/get")
-    public BlogBean queryBlog(@RequestParam("blogId") int blogId) {
-        return blogService.queryBlog(blogId);
-    }
-
-    @GetMapping("blog/getbyuser")
-    public List<BlogBean> queryBlogsByUser(@RequestParam("userId")int userId) {
-        return blogService.queryBlogsByUser(userId);
-    }
-
-    @GetMapping("blog/getuniblog")
-    public UniBlog queryUniBlogVO(@RequestParam("blogId") int blogId) {
-        return blogService.queryUniBlog(blogId);
-    }
 
     @GetMapping("comment/get")
     public List<CommentBean> queryCommentListByBlog(@RequestParam("blogId") int blogId) {
