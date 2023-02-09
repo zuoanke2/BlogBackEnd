@@ -45,7 +45,7 @@ public class CommentServiceImpl implements CommentService {
 
         for (CommentBean commentBean : commentBeanList) {
             UserComments userComments = new UserComments();
-            UniBlog uniBlog = blogService.queryUniBlogVO(commentBean.getBlogId());
+            UniBlog uniBlog = blogService.queryUniBlog(commentBean.getBlogId());
             userComments.setBlogAuthor(uniBlog.getBlogAuthor());
             userComments.setBlogTitle(uniBlog.getBlogTitle());
             userComments.setYourComment(commentBean.getComment());

@@ -29,7 +29,7 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
-    public UniBlog queryUniBlogVO(int blogId) {
+    public UniBlog queryUniBlog(int blogId) {
         UniBlog ubv = new UniBlog();
         BlogBean blogBean = queryBlog(blogId);
 
@@ -47,5 +47,10 @@ public class BlogServiceImpl implements BlogService {
         }
         ubv.setCommentList(uniCmtList);
         return ubv;
+    }
+
+    @Override
+    public List<BlogBean> queryBlogsByUser(int userId) {
+        return blogMapper.queryBlogsByUser(userId);
     }
 }

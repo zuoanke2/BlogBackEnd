@@ -6,4 +6,8 @@
     <select id="queryBlog" resultType="com.BlogBackEnd.model.BlogBean">
         SELECT * from blog where id = #{blogId}
     </select>
+
+    <select id="queryBlogsByUser" resultType="com.BlogBackEnd.model.BlogBean">
+        SELECT * from blog where authorid = #{userId}
+    </select>
 </mapper>

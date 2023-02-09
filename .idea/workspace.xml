@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d693486e-6afa-4d6c-97fe-5199587bd45f" name="Changes" comment="delete comment">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/model/UserComments.java" afterDir="false" />
+    <list default="true" id="d693486e-6afa-4d6c-97fe-5199587bd45f" name="Changes" comment="query a single user's comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/controller/BlogBackEndController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/controller/BlogBackEndController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/mapper/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/mapper/CommentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/mapper/BlogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/mapper/BlogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/impl/BlogServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BlogBackEnd/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/CommentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/BlogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/BlogMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +49,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindowMessages.ShowToolbar": "false",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -102,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675880769837</updated>
-      <workItem from="1675880771146" duration="15786000" />
+      <workItem from="1675880771146" duration="16456000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1675900711825</created>
@@ -139,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675908748597</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="query a single user's comments">
+      <created>1675913541118</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675913541118</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +176,8 @@
     <MESSAGE value="query the complete blog include content and comments" />
     <MESSAGE value="add comment and modify comment" />
     <MESSAGE value="delete comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete comment" />
+    <MESSAGE value="query a single user's comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="query a single user's comments" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -20,6 +20,16 @@ public class BlogBackEndController {
         return blogService.queryBlog(blogId);
     }
 
+    @GetMapping("blog/getbyuser")
+    public List<BlogBean> queryBlogsByUser(@RequestParam("userId")int userId) {
+        return blogService.queryBlogsByUser(userId);
+    }
+
+    @GetMapping("blog/getuniblog")
+    public UniBlog queryUniBlogVO(@RequestParam("blogId") int blogId) {
+        return blogService.queryUniBlog(blogId);
+    }
+
     @GetMapping("comment/get")
     public List<CommentBean> queryCommentListByBlog(@RequestParam("blogId") int blogId) {
         return commentService.queryCommentListByBlog(blogId);
@@ -46,10 +56,5 @@ public class BlogBackEndController {
     @GetMapping("/comment/queryByUser")
     public List<UserComments> queryUserComments(@RequestParam("userId") int userId) {
         return commentService.queryUserComments(userId);
-    }
-
-    @GetMapping("uniblog/get")
-    public UniBlog queryUniBlogVO(@RequestParam("blogId") int blogId) {
-        return blogService.queryUniBlogVO(blogId);
     }
 }
